@@ -6,8 +6,8 @@ include 'header.php';
 <form action="save_course.php" method="post">
         <table class="table table-bordered">
             <tr>
-                <td>Kode Course</td>
-                <td><input name="kode_course" type="textbox" placeholder="Kode_Course" class="form-control"></td>
+                <td>Kode kursus</td>
+                <td><input name="kode_kursus" type="textbox" placeholder="Kode_kursus" class="form-control"></td>
             </tr>
             <tr>
                 <td>Judul</td>
