@@ -1,16 +1,16 @@
 <?php 
 include 'header.php';
 
-$kode_course= $_GET['course'];
-$query = mysqli_query($connect, "select *from course where course= '$ckode_course'");
-$course = mysqli_fetch_array ($query);
+$kode_kursus= $_GET['kode_kursus'];
+$query = mysqli_query($connect, "select *from course where kode_kursus= '$ckode_kursus'");
+$kode_kursus = mysqli_fetch_array ($query);
 
 
 
 ?>
 <div class="container" style="margin-top: 50px;">
     <h4> Edit Data course</h4>
-    <Form action="update_nasabah.php" method="post">
+    <Form action="update_course.php" method="post">
     <table class="table table-bordered">
             <tr>
                 <td>kode_kursus</td>
@@ -18,7 +18,7 @@ $course = mysqli_fetch_array ($query);
             </tr>
             
             <tr>
-                <td>judu;</td>
+                <td>judul</td>
                 <td><input type="text" name="judul" value="<?php echo $course['judul'] ?>" Placeholder="judul" class="form-control"></td>
             </tr>
 
@@ -34,7 +34,7 @@ $course = mysqli_fetch_array ($query);
 
           <tr>
               <td>materi</td>
-              <td><input type="text" name="nomor_hp" value="<?php echo $materi['mate'] ?>" Placeholder="materi" class="form-control"></td>
+              <td><input type="text" name="nomor_hp" value="<?php echo $course['materi'] ?>" Placeholder="materi" class="form-control"></td>
           </tr>  
                 
                 <tr>
